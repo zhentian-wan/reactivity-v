@@ -27,7 +27,6 @@ describe('reactive/effect', () => {
         test('should flow the control logic', () => {
             const state = reactive({a: 1, b: 2, c: 3})
             const fnSpy = vi.fn(() => {
-                console.log('fn')
                if (state.a ===1 ) {
                 state.b
                } else {
